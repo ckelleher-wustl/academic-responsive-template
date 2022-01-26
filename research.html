@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8"/>
+        <title>[ Caitlin Kelleher @ WUSTL ]</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        
+        <!-- Font Awesome Icons -->
+        <link rel="stylesheet" href="css/font-awesome.min.css"/>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karla">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Spectral">
+        
+        <!-- Bootstrap -->
+        <!-- <link href="css/bootstrap.min.css" rel="stylesheet"/> -->
+        <link href="css/bootstrap.css" rel="stylesheet"/>
+        <!--<link href="css/bootstrap.min.css" rel="stylesheet">-->
+        
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+         <script src="js/html5shiv.js"></script>
+         <script src="js/respond.min.js"></script>
+         <![endif]-->
+        
+        
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <!-- http://getbootstrap.com/customize/ change "@screen-sm" -> "@screen-md" in @grid-float-breakpoint -->
+        <script src="js/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/menucollapse.js"></script>
+        <script type="text/javascript" src="js/arrow78.js"></script>
+        <script type="text/javascript" src="js/custom.js"></script>
+    </head>
+    
+    <body id="page-top" class="publications"></body>
+
+     <!-- Navigation -->
+     <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"  data-target="#bs-example-navbar-collapse-2" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="glyphicon glyphicon-search"></span>
+                </button>
+                <button id="button2" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <span><a href="#"><img border="0" width="330" src="images/wustl_logo.png"/></a></span>
+            </div>
+            
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li class="page-scroll">
+                    <a onclick="javascript:reset_menus();$('#tab-awards-content').show();" href="index.html">Home</a>
+                </li>
+                <li class="page-scroll">
+                    <a onclick="javascript:reset_menus();$('#tab-awards-content').show();" href="research.html">Research</a>
+                </li>
+                <li class="page-scroll">
+                    <a onclick="javascript:reset_menus();$('#tab-awards-content').show();" href="publications.html">Publications</a>
+                </li>
+                <li class="page-scroll">
+                    <a onclick="javascript:reset_menus();$('#tab-awards-content').show();" href="awards.html">Awards</a>
+                </li>
+                <li class="page-scroll">
+                    <a onclick="javascript:reset_menus();$('#tab-courses-content').show();" href="courses.html">Courses</a>
+                </li>
+                <li class="page-scroll">
+                    <a onclick="javascript:reset_menus();$('#bs-example-navbar-collapse-2').toggle();">
+                        <span class="glyphicon glyphicon-search"></span>
+                    </a>
+                </li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+            
+            <!-- search box submenu -->
+            <div class="collapse" id="bs-example-navbar-collapse-2">
+                <gcse:search></gcse:search>
+                    </div>
+            
+        </div><!-- /.container-fluid -->
+    </nav>
+    
+    <!-- <section  name="publications" id="publications"> -->
+        <section name="intro" id="intro">
+            <div class="container lead">
+                <div style="text-align: left; margin-top:10px" class="col-md-12">
+                    <!--<h2>Welcome!</h2>-->
+                    
+                    <b class="noshow" style="display:none;" id="tab-1">
+                        <button class="btn btn-default btn-lg btn-block" style="display: block; width: 100%;" onclick="javascript:$('#tab-intro-content').toggle();">Introduction <span class="glyphicon glyphicon-chevron-down"></span></button>
+                    </b>
+                    
+                    <div class="allshow" style="display:none;" id="tab-intro-content">
+                        <hr class="star-primary">
+
+                            <h2>
+                                Current Projects
+                            </h2>
+                            
+                            <div class="container">
+                                <div class="image">
+                                  <img src="images/coil_model.jpg" style="width:300px;margin-top:30px">
+                                </div>
+                                <div>
+                                    <div class="text" style="padding-left:10px;">
+                                        <h3>Modeling API Learning</h3>
+                                        Current programming practices rely heavily on the use of APIs (Application Programming Interfaces) and frameworks. However, 
+                                        APIs can be challenging to learn and use. Existing research primarily focuses on specific barriers programmers encounter while 
+                                        learning APIs, providing a fragmented understanding of the process. We are developing models of the API learning process informed by
+                                        Information Foraging, Cognitive Load Theory, External Memory and Sensemaking. Our initial studies provide preliminary validation of
+                                        these models through examining the behavior of programmers
+                                        learning the React JS API. Additionally, these models show how programmers move through the process of API learning and identify barriers they
+                                        encounter. 
+                                    </div>
+
+                                    <div class="text" style="padding-left:10px;font-size: x-small;padding-top: 10px;">
+                                        Selected Publications:
+                                        <li>
+                                            <span class="author">Gao Gao, Finn Voichick, Michelle Ichinco, Caitlin Kelleher</span>,
+                                            <span class="title">"Exploring Programmers' API Learning Processes: Collecting Web Resources as External Memory"</span>,
+                                            <span class="publisher">2020 IEEE Symposium on Visual Languages and Human-Centric Computing (VL/HCC)</span>, pp. 1&ndash;10, <span class="year">2020</span>.
+                                            
+                                            [<a target="_self" href="https://www.cse.wustl.edu/~ckelleher/papers/exploringAPILearning.pdf">link</a>]&nbsp;
+                                            [<a type="button" data-toggle="modal" data-target="#bib-gao2020exploring">bibtex</a>]&nbsp;
+                                            
+                                            <div class="modal fade" id="bib-gao2020exploring" role="dialog"><div class="modal-dialog"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal">&times;</button><h4 class="modal-title">Bibtex</h4></div><div class="modal-body"> 
+                                            <pre>@inproceedings{gao2020exploring,
+                                             author = {Gao Gao and Finn Voichick and Michelle Ichinco and Caitlin Kelleher},
+                                             booktitle = {2020 IEEE Symposium on Visual Languages and Human-Centric Computing (VL/HCC)},
+                                             organization = {IEEE},
+                                             pages = {1&ndash;10},
+                                             title = {Exploring Programmers' API Learning Processes: Collecting Web Resources as External Memory},
+                                             url = {https://www.cse.wustl.edu/~ckelleher/papers/exploringAPILearning.pdf},
+                                             year = {2020}
+                                            }</pre> </div><div class="modal-footer"><button type="button" class="btn btn-default" data-dismiss="modal">Close</button></div></div></div></div>
+                                        </li>
+                                    </div> 
+                                </div>
+                            </div>
+
+                            <div class="container">
+                                <div class="image">
+                                  <img src="images/historyViz.png" style="width:300px;margin-top:30px">
+                                </div>
+                                <div class="text" style="padding-left:10px;">
+                                    <h3>Code Stories</h3>
+                                    Existing approaches to capturing code histories fall short of what we want from them. Source code commits lump too many changes together,
+                                    making it difficult to understand the reasoning for them. Key stroke level histories are too much. We are working to create Code Stories that 
+                                    capture the history of how software programs evolved that organize changes based on a problem-solution structure and incorporate code history, 
+                                    output history and web foraging history to capture the influences that shape the code. 
+                                </div>
+                            </div>
+
+                            <div class="container">
+                                <div class="image">
+                                  <img src="images/taInterface.png" style="width:300px;margin-top:30px">
+                                </div>
+                                <div>
+                                    <div class="text" style="padding-left:10px;">
+                                        <h3>Tools to Support TAs</h3>
+                                        Universities increasingly rely on undergraduate TAs to provide accessible help for students in computer science courses. But, we know relatively
+                                        little about how TAs and learners interact, how those practices compare to the best practices for tutoring, and where TAs could use some extra 
+                                        support. We are studying what occurs during help sessions, identifying barriers, and designing tools to address those. The first such tool focuses 
+                                        on supporting TAs in debugging student code and understanding the bugs that exist in student code. 
+                                    </div>
+
+                                    <div class="text" style="padding-left:10px;font-size: x-small;padding-top: 10px;">
+                                        Selected Publications:
+                                        <li>
+                                            <span class="author">Yana Malysheva and Caitlin Kelleher</span>,
+                                            <span class="title">"Assisting Teaching Assistants with Automatic Code Corrections"</span>,
+                                            <span class="publisher">2022 Conference on Human Factors in Computing (CHI) - to appear</span>, pp. 1&ndash;10, <span class="year">2020</span>.
+                                            
+                                        </li>
+                                    </div> 
+                                </div>
+                            </div>
+
+                            <h2>
+                                Past Projects
+                            </h2>
+                            
+                            <div class="container">
+                                <div class="image">
+                                  <img src="images/storytellingAlice.png" style="width:300px;margin-top:20px">
+                                </div>
+                                <div>
+                                    <div class="text" style="padding-left:10px;">
+                                        <h3>Storytelling Alice</h3>
+                                        Storytelling Alice used storytelling as a means to the end of engaging middle school girls in computer programming. Rather than presenting
+                                        programming as an end in itself, it was presented as a means of self-expression through stories created and reified using 3D animation. By designing
+                                        the environment to support storytelling, it was significantly more successful at engaging young girls in programming. Users of Storytelling Alice spent 42%
+                                        more time programming and were more than 3 times as likely to sneak extra time to program (51% vs 16%). In the years since Storytelling Alice, 
+                                        storytelling has become a fairly common approach for engaging a more gender-diverse audience in programming.
+                                    </div>
+                                    <div class="text" style="padding-left:10px;font-size: x-small;padding-top: 10px;">
+                                        Selected Publications:
+                                        <li>
+                                            <span class="author">Caitlin Kelleher, Randy Pausch, Sara Kiesler</span>,
+                                            <span class="title">"Storytelling alice motivates middle school girls to learn computer programming"</span>,
+                                            <span class="publisher">Proceedings of the SIGCHI conference on Human factors in computing systems</span>, pp. 1455&ndash;1464, <span class="year">2007</span>.
+                                            
+                                            [<a target="_self" href="https://dl.acm.org/doi/10.1145/1240624.1240844?cid=81100607695">link</a>]&nbsp;
+                                            [<a type="button" data-toggle="modal" data-target="#bib-kelleher2007storytelling">bibtex</a>]&nbsp;
+                                            
+                                            <div class="modal fade" id="bib-kelleher2007storytelling" role="dialog"><div class="modal-dialog"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal">&times;</button><h4 class="modal-title">Bibtex</h4></div><div class="modal-body"> 
+                                            <pre>@inproceedings{kelleher2007storytelling,
+                                            author = {Caitlin Kelleher and Randy Pausch and Sara Kiesler},
+                                            booktitle = {Proceedings of the SIGCHI conference on Human factors in computing systems},
+                                            pages = {1455&ndash;1464},
+                                            title = {Storytelling alice motivates middle school girls to learn computer programming},
+                                            url = {https://dl.acm.org/doi/10.1145/1240624.1240844?cid=81100607695},
+                                            year = {2007}
+                                            }</pre> </div><div class="modal-footer"><button type="button" class="btn btn-default" data-dismiss="modal">Close</button></div></div></div></div>
+                                        </li>
+                                        <li>
+                                            <span class="author">Caitlin Kelleher, Randy Pausch</span>,
+                                            <span class="title">"Using storytelling to motivate programming"</span>,
+                                            <span class="publisher">Communications of the ACM</span>, vol. 50, no. 7, pp. 58&ndash;64, <span class="year">2007</span>.
+                                            
+                                            [<a target="_self" href="https://dl.acm.org/doi/10.1145/1272516.1272540?cid=81100607695">link</a>]&nbsp;
+                                            [<a type="button" data-toggle="modal" data-target="#bib-kelleher2007using">bibtex</a>]&nbsp;
+                                            
+                                            <div class="modal fade" id="bib-kelleher2007using" role="dialog"><div class="modal-dialog"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal">&times;</button><h4 class="modal-title">Bibtex</h4></div><div class="modal-body"> 
+                                            <pre>@article{kelleher2007using,
+                                             author = {Caitlin Kelleher and Randy Pausch},
+                                             journal = {Communications of the ACM},
+                                             number = {7},
+                                             pages = {58&ndash;64},
+                                             publisher = {ACM},
+                                             title = {Using storytelling to motivate programming},
+                                             url = {https://dl.acm.org/doi/10.1145/1272516.1272540?cid=81100607695},
+                                             volume = {50},
+                                             year = {2007}
+                                            }</pre> </div><div class="modal-footer"><button type="button" class="btn btn-default" data-dismiss="modal">Close</button></div></div></div></div>
+                                        </li>
+                                        <li>
+                                            <span class="author">Caitlin Kelleher, Randy Pausch</span>,
+                                            <span class="title">"Lessons learned from designing a programming system to support middle school girls creating animated stories"</span>,
+                                            <span class="publisher">Visual languages and human-centric computing (VL/HCC'06)</span>, pp. 165&ndash;172, <span class="year">2006</span>.
+                                            
+                                            [<a target="_self" href="https://www.cse.wustl.edu/~ckelleher/SupportAnimStoriesHCC.pdf">link</a>]&nbsp;
+                                            [<a type="button" data-toggle="modal" data-target="#bib-kelleher2006lessons">bibtex</a>]&nbsp;
+                                            
+                                            <div class="modal fade" id="bib-kelleher2006lessons" role="dialog"><div class="modal-dialog"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal">&times;</button><h4 class="modal-title">Bibtex</h4></div><div class="modal-body"> 
+                                            <pre>@inproceedings{kelleher2006lessons,
+                                             author = {Caitlin Kelleher and Randy Pausch},
+                                             booktitle = {Visual languages and human-centric computing (VL/HCC'06)},
+                                             organization = {IEEE},
+                                             pages = {165&ndash;172},
+                                             title = {Lessons learned from designing a programming system to support middle school girls creating animated stories},
+                                             url = {https://www.cse.wustl.edu/~ckelleher/SupportAnimStoriesHCC.pdf},
+                                             year = {2006}
+                                            }</pre> </div><div class="modal-footer"><button type="button" class="btn btn-default" data-dismiss="modal">Close</button></div></div></div></div>
+                                        </li>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="container">
+                                <div class="image">
+                                  <img src="images/strokeGames.png" style="width:300px;margin-top:20px">
+                                </div>
+                                <div>
+                                    <div class="text" style="padding-left:10px;">
+                                        <h3>Games for Stroke Rehabilitation</h3>
+                                        We did some of the earliest work on the use of games for stroke rehabilitation, helping to explore how to design games with a physical 
+                                        rehabilitation goal, how those games impacted individuals with stroke, as well as strategies for calibration and positive feedback.
+                                    </div>
+                                    <div class="text" style="padding-left:10px;font-size: x-small;padding-top: 10px;">
+                                        Selected Publications:
+                                        <li>
+                                            <span class="author">Gazihan Alankus, Amanda Lazar, Matt May, Caitlin Kelleher</span>,
+                                            <span class="title">"Towards customizable games for stroke rehabilitation"</span>,
+                                            <span class="publisher">Proceedings of the SIGCHI conference on human factors in computing systems</span>, pp. 2113&ndash;2122, <span class="year">2010</span>.
+                                            
+                                            [<a target="_self" href="https://dl.acm.org/doi/10.1145/1753326.1753649?cid=81100607695">link</a>]&nbsp;
+                                            [<a type="button" data-toggle="modal" data-target="#bib-alankus2010towards">bibtex</a>]&nbsp;
+                                            
+                                            <div class="modal fade" id="bib-alankus2010towards" role="dialog"><div class="modal-dialog"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal">&times;</button><h4 class="modal-title">Bibtex</h4></div><div class="modal-body"> 
+                                            <pre>@inproceedings{alankus2010towards,
+                                             author = {Gazihan Alankus and Amanda Lazar and Matt May and Caitlin Kelleher},
+                                             booktitle = {Proceedings of the SIGCHI conference on human factors in computing systems},
+                                             pages = {2113&ndash;2122},
+                                             title = {Towards customizable games for stroke rehabilitation},
+                                             url = {https://dl.acm.org/doi/10.1145/1753326.1753649?cid=81100607695},
+                                             year = {2010}
+                                            }</pre> </div><div class="modal-footer"><button type="button" class="btn btn-default" data-dismiss="modal">Close</button></div></div></div></div>
+                                        </li>
+                                        <li>
+                                            <span class="author">Gazihan Alankus, Rachel Proffitt, Caitlin Kelleher, Jack Engsberg</span>,
+                                            <span class="title">"Stroke therapy through motion-based games: a case study"</span>,
+                                            <span class="publisher">ACM Transactions on Accessible Computing (TACCESS)</span>, vol. 4, no. 1, pp. 1&ndash;35, <span class="year">2011</span>.
+                                            
+                                            [<a target="_self" href="https://dl.acm.org/doi/10.1145/1878803.1878842?cid=81100607695">link</a>]&nbsp;
+                                            [<a type="button" data-toggle="modal" data-target="#bib-alankus2011stroke">bibtex</a>]&nbsp;
+                                            
+                                            <div class="modal fade" id="bib-alankus2011stroke" role="dialog"><div class="modal-dialog"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal">&times;</button><h4 class="modal-title">Bibtex</h4></div><div class="modal-body"> 
+                                            <pre>@article{alankus2011stroke,
+                                             author = {Gazihan Alankus and Rachel Proffitt and Caitlin Kelleher and Jack Engsberg},
+                                             journal = {ACM Transactions on Accessible Computing (TACCESS)},
+                                             number = {1},
+                                             pages = {1&ndash;35},
+                                             publisher = {ACM New York, NY, USA},
+                                             title = {Stroke therapy through motion-based games: a case study},
+                                             url = {https://dl.acm.org/doi/10.1145/1878803.1878842?cid=81100607695},
+                                             volume = {4},
+                                             year = {2011}
+                                            }</pre> </div><div class="modal-footer"><button type="button" class="btn btn-default" data-dismiss="modal">Close</button></div></div></div></div>
+                                            </li>
+                                        <li>
+                                            <span class="author">Gazihan Alankus, Caitlin Kelleher</span>,
+                                            <span class="title">"Reducing compensatory motions in motion-based video games for stroke rehabilitation"</span>,
+                                            <span class="publisher">Human--Computer Interaction</span>, vol. 30, no. 3-4, pp. 232&ndash;262, <span class="year">2015</span>.
+                                            
+                                            [<a type="button" data-toggle="modal" data-target="#bib-alankus2015reducing">bibtex</a>]&nbsp;
+                                            
+                                            <div class="modal fade" id="bib-alankus2015reducing" role="dialog"><div class="modal-dialog"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal">&times;</button><h4 class="modal-title">Bibtex</h4></div><div class="modal-body"> 
+                                            <pre>@article{alankus2015reducing,
+                                             author = {Gazihan Alankus and Caitlin Kelleher},
+                                             journal = {Human--Computer Interaction},
+                                             number = {3-4},
+                                             pages = {232&ndash;262},
+                                             publisher = {Taylor \& Francis},
+                                             title = {Reducing compensatory motions in motion-based video games for stroke rehabilitation},
+                                             volume = {30},
+                                             year = {2015}
+                                            }</pre> </div><div class="modal-footer"><button type="button" class="btn btn-default" data-dismiss="modal">Close</button></div></div></div></div>
+                                            </li>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="container">
+                                <div class="image">
+                                  <img src="https://i.pinimg.com/originals/26/ea/fc/26eafc0b14488fea03fa8fa9751203ff.jpg" style="width:200px;height:150px;margin-top:20px">
+                                </div>
+                                <div>
+                                    <div class="text" style="padding-left:10px;">
+                                        <h3>Supporting Novice Code Reuse</h3>
+                                        Formal opportunities to explore computer science are still relatively rare for young students. Consequently, it is important that 
+                                        programming environments for kids enable them to learn from each others' code.
+                                    </div>
+                                    <div class="text" style="padding-left:10px;font-size: x-small;padding-top: 10px;">
+                                        Selected Publications:
+                                        <li>
+                                            <span class="author">Paul A Gross, Micah S Herstand, Jordana W Hodges, Caitlin L Kelleher</span>,
+                                            <span class="title">"A code reuse interface for non-programmer middle school students"</span>,
+                                            <span class="publisher">Proceedings of the 15th international conference on Intelligent user interfaces</span>, pp. 219&ndash;228, <span class="year">2010</span>.
+                                            
+                                            [<a target="_self" href="https://dl.acm.org/doi/10.1145/1719970.1720001?cid=81100607695">link</a>]&nbsp;
+                                            [<a type="button" data-toggle="modal" data-target="#bib-gross2010code">bibtex</a>]&nbsp;
+                                            
+                                            <div class="modal fade" id="bib-gross2010code" role="dialog"><div class="modal-dialog"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal">&times;</button><h4 class="modal-title">Bibtex</h4></div><div class="modal-body"> 
+                                            <pre>@inproceedings{gross2010code,
+                                             author = {Paul A Gross and Micah S Herstand and Jordana W Hodges and Caitlin L Kelleher},
+                                             booktitle = {Proceedings of the 15th international conference on Intelligent user interfaces},
+                                             pages = {219&ndash;228},
+                                             title = {A code reuse interface for non-programmer middle school students},
+                                             url = {https://dl.acm.org/doi/10.1145/1719970.1720001?cid=81100607695},
+                                             year = {2010}
+                                            }</pre> </div><div class="modal-footer"><button type="button" class="btn btn-default" data-dismiss="modal">Close</button></div></div></div></div>
+                                        </li>
+                                        <li>
+                                            <span class="author">Paul Gross, Jennifer Yang, Caitlin Kelleher</span>,
+                                            <span class="title">"Dinah: An interface to assist non-programmers with selecting program code causing graphical output"</span>,
+                                            <span class="publisher">proceedings of the SIGCHI conference on human factors in computing systems</span>, pp. 3397&ndash;3400, <span class="year">2011</span>.
+                                            
+                                            [<a target="_self" href="https://dl.acm.org/doi/10.1145/1978942.1979448?cid=81100607695">link</a>]&nbsp;
+                                            [<a type="button" data-toggle="modal" data-target="#bib-gross2011dinah">bibtex</a>]&nbsp;
+                                            
+                                            <div class="modal fade" id="bib-gross2011dinah" role="dialog"><div class="modal-dialog"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal">&times;</button><h4 class="modal-title">Bibtex</h4></div><div class="modal-body"> 
+                                            <pre>@inproceedings{gross2011dinah,
+                                             author = {Paul Gross and Jennifer Yang and Caitlin Kelleher},
+                                             booktitle = {proceedings of the SIGCHI conference on human factors in computing systems},
+                                             pages = {3397&ndash;3400},
+                                             title = {Dinah: An interface to assist non-programmers with selecting program code causing graphical output},
+                                             url = {https://dl.acm.org/doi/10.1145/1978942.1979448?cid=81100607695},
+                                             year = {2011}
+                                            }</pre> </div><div class="modal-footer"><button type="button" class="btn btn-default" data-dismiss="modal">Close</button></div></div></div></div>
+                                        </li>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="container">
+                                <div class="image">
+                                  <img src="images/stencils.png" style="width:300px;margin-top:20px">
+                                </div>
+                                <div>
+                                    <div class="text" style="padding-left:30px;">
+                                        <h3>Generating and Presenting Tutorials</h3>
+                                        Formal opportunities to explore computer science are still relatively rare for young students. Consequently, it is important that 
+                                        programming environments for kids enable them to learn from each others' code. We have researched how novice programmers perform
+                                        code localization and used that to design interfaces that 1) allow novices to select, adapt, and reuse code others have written within 
+                                        their own projects and 2) enable novices to explore and understand the behavior of code they did not write.
+                                    </div>
+                                    <div class="text" style="padding-left:30px;font-size: x-small;padding-top: 20px;">
+                                        Selected Publications:
+                                        <li>
+                                            <span class="author">Caitlin Kelleher, Randy Pausch</span>,
+                                            <span class="title">"Stencils-based tutorials: design and evaluation"</span>,
+                                            <span class="publisher">Proceedings of the SIGCHI conference on Human factors in computing systems</span>, pp. 541&ndash;550, <span class="year">2005</span>.
+                                            
+                                            [<a target="_self" href="https://dl.acm.org/doi/10.1145/1054972.1055047?cid=81100607695">link</a>]&nbsp;
+                                            [<a type="button" data-toggle="modal" data-target="#bib-kelleher2005stencils">bibtex</a>]&nbsp;
+                                            
+                                            <div class="modal fade" id="bib-kelleher2005stencils" role="dialog"><div class="modal-dialog"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal">&times;</button><h4 class="modal-title">Bibtex</h4></div><div class="modal-body"> 
+                                            <pre>@inproceedings{kelleher2005stencils,
+                                             author = {Caitlin Kelleher and Randy Pausch},
+                                             booktitle = {Proceedings of the SIGCHI conference on Human factors in computing systems},
+                                             pages = {541&ndash;550},
+                                             title = {Stencils-based tutorials: design and evaluation},
+                                             url = {https://dl.acm.org/doi/10.1145/1054972.1055047?cid=81100607695},
+                                             year = {2005}
+                                            }</pre> </div><div class="modal-footer"><button type="button" class="btn btn-default" data-dismiss="modal">Close</button></div></div></div></div>
+                                        </li>
+                                        <li>
+                                            <span class="author">Kyle J Harms, Dennis Cosgrove, Shannon Gray, Caitlin Kelleher</span>,
+                                            <span class="title">"Automatically generating tutorials to enable middle school children to learn programming independently"</span>,
+                                            <span class="publisher">Proceedings of the 12th International Conference on Interaction Design and Children</span>, pp. 11&ndash;19, <span class="year">2013</span>.
+                                            
+                                            [<a target="_self" href="https://dl.acm.org/doi/10.1145/2485760.2485764?cid=81100607695">link</a>]&nbsp;
+                                            [<a type="button" data-toggle="modal" data-target="#bib-harms2013automatically">bibtex</a>]&nbsp;
+                                            
+                                            <div class="modal fade" id="bib-harms2013automatically" role="dialog"><div class="modal-dialog"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal">&times;</button><h4 class="modal-title">Bibtex</h4></div><div class="modal-body"> 
+                                            <pre>@inproceedings{harms2013automatically,
+                                             author = {Kyle J Harms and Dennis Cosgrove and Shannon Gray and Caitlin Kelleher},
+                                             booktitle = {Proceedings of the 12th International Conference on Interaction Design and Children},
+                                             pages = {11&ndash;19},
+                                             title = {Automatically generating tutorials to enable middle school children to learn programming independently},
+                                             url = {https://dl.acm.org/doi/10.1145/2485760.2485764?cid=81100607695},
+                                             year = {2013}
+                                            }</pre> </div><div class="modal-footer"><button type="button" class="btn btn-default" data-dismiss="modal">Close</button></div></div></div></div>
+                                        </li>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="container">
+                                <div class="image">
+                                  <img src="https://i.pinimg.com/originals/26/ea/fc/26eafc0b14488fea03fa8fa9751203ff.jpg" style="width:200px;height:150px;margin-top:20px">
+                                </div>
+                                <div>
+                                    <div class="text" style="padding-left:10px;">
+                                        <h3>Code Puzzles and Cognitive Load</h3>
+                                        We explored the use of code puzzles similar to Parsons puzzles as a way to help kids learn to program. Our research contributed insights about 
+                                        how to design effective puzzles and the impact of distractor elements (code elements that are not part of the correct solution). We then created a 
+                                        model to predict the Cognitive Load a learner would experience from a selected puzzle, given their past history. Analysis of the underlying learned model
+                                        revealed concepts that behaviors that were predictive of success.
+                                    </div>
+                                    <div class="text" style="padding-left:10px;font-size: x-small;padding-top: 10px;">
+                                        Selected Publications:
+                                        <li>
+                                            <span class="author">Kyle J Harms, Noah Rowlett, Caitlin Kelleher</span>,
+                                            <span class="title">"Enabling independent learning of programming concepts through programming completion puzzles"</span>,
+                                            <span class="publisher">2015 IEEE Symposium on Visual Languages and Human-Centric Computing (VL/HCC)</span>, pp. 271&ndash;279, <span class="year">2015</span>.
+                                            
+                                            [<a target="_self" href="https://www.cse.wustl.edu/~ckelleher/papers/indLearningCompletionPuzzles.pdf">link</a>]&nbsp;
+                                            [<a type="button" data-toggle="modal" data-target="#bib-harms2015enabling">bibtex</a>]&nbsp;
+                                            
+                                            <div class="modal fade" id="bib-harms2015enabling" role="dialog"><div class="modal-dialog"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal">&times;</button><h4 class="modal-title">Bibtex</h4></div><div class="modal-body"> 
+                                            <pre>@inproceedings{harms2015enabling,
+                                             author = {Kyle J Harms and Noah Rowlett and Caitlin Kelleher},
+                                             booktitle = {2015 IEEE Symposium on Visual Languages and Human-Centric Computing (VL/HCC)},
+                                             organization = {IEEE},
+                                             pages = {271&ndash;279},
+                                             title = {Enabling independent learning of programming concepts through programming completion puzzles},
+                                             url = {https://www.cse.wustl.edu/~ckelleher/papers/indLearningCompletionPuzzles.pdf},
+                                             year = {2015}
+                                            }</pre> </div><div class="modal-footer"><button type="button" class="btn btn-default" data-dismiss="modal">Close</button></div></div></div></div>
+                                        </li>
+                                        <li>
+                                            <span class="author">Caitlin Kelleher, Wint Hnin</span>,
+                                            <span class="title">"Predicting cognitive load in future code puzzles"</span>,
+                                            <span class="publisher">Proceedings of the 2019 CHI Conference on Human Factors in Computing Systems</span>, pp. 1&ndash;12, <span class="year">2019</span>.
+                                            
+                                            [<a target="_self" href="https://dl.acm.org/doi/pdf/10.1145/3290605.3300487">link</a>]&nbsp;
+                                            [<a type="button" data-toggle="modal" data-target="#bib-kelleher2019predicting">bibtex</a>]&nbsp;
+                                            
+                                            <div class="modal fade" id="bib-kelleher2019predicting" role="dialog"><div class="modal-dialog"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal">&times;</button><h4 class="modal-title">Bibtex</h4></div><div class="modal-body"> 
+                                            <pre>@inproceedings{kelleher2019predicting,
+                                             author = {Caitlin Kelleher and Wint Hnin},
+                                             booktitle = {Proceedings of the 2019 CHI Conference on Human Factors in Computing Systems},
+                                             pages = {1&ndash;12},
+                                             title = {Predicting cognitive load in future code puzzles},
+                                             url = {https://dl.acm.org/doi/pdf/10.1145/3290605.3300487},
+                                             year = {2019}
+                                            }</pre> </div><div class="modal-footer"><button type="button" class="btn btn-default" data-dismiss="modal">Close</button></div></div></div></div>
+                                        </li>
+                                        <li>
+                                            <span class="author">Caitlin Kelleher, Wint Hnin</span>,
+                                            <span class="title">"Predicting cognitive load in future code puzzles"</span>,
+                                            <span class="publisher">Proceedings of the 2019 CHI Conference on Human Factors in Computing Systems</span>, pp. 1&ndash;12, <span class="year">2019</span>.
+                                            
+                                            [<a target="_self" href="https://dl.acm.org/doi/pdf/10.1145/3290605.3300487">link</a>]&nbsp;
+                                            [<a type="button" data-toggle="modal" data-target="#bib-kelleher2019predicting">bibtex</a>]&nbsp;
+                                            
+                                            <div class="modal fade" id="bib-kelleher2019predicting" role="dialog"><div class="modal-dialog"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal">&times;</button><h4 class="modal-title">Bibtex</h4></div><div class="modal-body"> 
+                                            <pre>@inproceedings{kelleher2019predicting,
+                                             author = {Caitlin Kelleher and Wint Hnin},
+                                             booktitle = {Proceedings of the 2019 CHI Conference on Human Factors in Computing Systems},
+                                             pages = {1&ndash;12},
+                                             title = {Predicting cognitive load in future code puzzles},
+                                             url = {https://dl.acm.org/doi/pdf/10.1145/3290605.3300487},
+                                             year = {2019}
+                                            }</pre> </div><div class="modal-footer"><button type="button" class="btn btn-default" data-dismiss="modal">Close</button></div></div></div></div>
+                                        </li>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="container">
+                                <div class="image">
+                                  <img src="images/suggestions.jpeg" style="width:300px;margin-top:20px">
+                                </div>
+                                <div>
+                                    <div class="text" style="padding-left:10px;">
+                                        <h3>Static Code Suggestions</h3>
+                                        Sometimes the most difficult questions are the ones you don't realize that you should be asking. In this project, we explored
+                                        using static code analysis of programmers' code as they were working to suggest methods and programming constructs that might be 
+                                        relevant to them. These were presented in a side panel of options. Our results suggest that this is a potentially valuable form of 
+                                        support that is currently rare in systems. Novice programmers chose to engage with these suggested items more 
+                                        frequently than any other form of support available, including documentation, tutorials, and code puzzles. Further, suggestions appealed to a substantially
+                                        broader proportion of users than other forms of support: 70% of users used suggestions vs 27.5% for the next most used form. 
+                                    </div>
+                                    <div class="text" style="padding-left:10px;font-size: x-small;padding-top: 10px;">
+                                        Selected Publications:
+                                        <li>
+                                            <span class="author">Wint Hnin, Michelle Ichinco, Caitlin Kelleher</span>,
+                                            <span class="title">"An Exploratory Study of the Usage of Different Educational Resources in an Independent Context"</span>,
+                                            <span class="publisher">2017 IEEE Symposium on Visual Languages and Human-Centric Computing (VL/HCC)</span>, pp. 181&ndash;189, <span class="year">2017</span>.
+                                            
+                                            [<a target="_self" href="https://www.cse.wustl.edu/~ckelleher/papers/resourcesIndependentContext.pdf">link</a>]&nbsp;
+                                            [<a type="button" data-toggle="modal" data-target="#bib-hnin2017exploratory">bibtex</a>]&nbsp;
+                                            
+                                            <div class="modal fade" id="bib-hnin2017exploratory" role="dialog"><div class="modal-dialog"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal">&times;</button><h4 class="modal-title">Bibtex</h4></div><div class="modal-body"> 
+                                            <pre>@inproceedings{hnin2017exploratory,
+                                             author = {Wint Hnin and Michelle Ichinco and Caitlin Kelleher},
+                                             booktitle = {2017 IEEE Symposium on Visual Languages and Human-Centric Computing (VL/HCC)},
+                                             pages = {181&ndash;189},
+                                             title = {An Exploratory Study of the Usage of Different Educational Resources in an Independent Context},
+                                             url = {https://www.cse.wustl.edu/~ckelleher/papers/resourcesIndependentContext.pdf},
+                                             year = {2017}
+                                            }</pre> </div><div class="modal-footer"><button type="button" class="btn btn-default" data-dismiss="modal">Close</button></div></div></div></div>
+                                        </li>
+                                        <li>
+                                            <span class="author">Michelle Ichinco, Wint Yee Hnin, Caitlin L Kelleher</span>,
+                                            <span class="title">"Suggesting api usage to novice programmers with the example guru"</span>,
+                                            <span class="publisher">Proceedings of the 2017 CHI Conference on Human Factors in Computing Systems</span>, pp. 1105&ndash;1117, <span class="year">2017</span>.
+                                            
+                                            [<a target="_self" href="https://dl.acm.org/doi/pdf/10.1145/3025453.3025827">link</a>]&nbsp;
+                                            [<a type="button" data-toggle="modal" data-target="#bib-ichinco2017suggesting">bibtex</a>]&nbsp;
+                                            
+                                            <div class="modal fade" id="bib-ichinco2017suggesting" role="dialog"><div class="modal-dialog"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal">&times;</button><h4 class="modal-title">Bibtex</h4></div><div class="modal-body"> 
+                                            <pre>@inproceedings{ichinco2017suggesting,
+                                             author = {Michelle Ichinco and Wint Yee Hnin and Caitlin L Kelleher},
+                                             booktitle = {Proceedings of the 2017 CHI Conference on Human Factors in Computing Systems},
+                                             pages = {1105&ndash;1117},
+                                             title = {Suggesting api usage to novice programmers with the example guru},
+                                             url = {https://dl.acm.org/doi/pdf/10.1145/3025453.3025827},
+                                             year = {2017}
+                                            }</pre> </div><div class="modal-footer"><button type="button" class="btn btn-default" data-dismiss="modal">Close</button></div></div></div></div>
+                                            </li>
+                                    </div>
+                                </div>
+                            </div>
+
+                            
+
+                            
+                            
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+</html>

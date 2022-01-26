@@ -23,7 +23,17 @@
  */
 body {
     font-size: 16px;
+	font-family: 'Tangerine', serif;
 }
+
+ul {
+	font-family: 'Tangerine', serif;
+}
+
+h2 {
+	padding-top: 20px;
+}
+
 .classes {
 	margin:30px;
 }
