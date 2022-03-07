@@ -14,6 +14,7 @@
         <!-- Bootstrap -->
         <!-- <link href="css/bootstrap.min.css" rel="stylesheet"/> -->
         <link href="css/bootstrap.css" rel="stylesheet"/>
+        <link href="css/custom.css" rel="stylesheet"/>
         <!--<link href="css/bootstrap.min.css" rel="stylesheet">-->
         
         <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -30,7 +31,7 @@
         <!-- Include all compiled plugins (below), or include individual files as needed -->
         <script src="js/bootstrap.min.js"></script>
         <script src="js/menucollapse.js"></script>
-        <script type="text/javascript" src="js/arrow78.js"></script>
+        <script type="text/javascript" src="js/arrow78.js" style="width: 82px;"></script>
         <script type="text/javascript" src="js/custom.js"></script>
     </head>
     
@@ -108,7 +109,7 @@
                             
                             <div class="container">
                                 <div class="image">
-                                  <img src="images/coil_model.jpg" style="width:300px;margin-top:30px">
+                                  <img src="images/coil_model.jpg" >
                                 </div>
                                 <div>
                                     <div class="text" style="padding-left:10px;">
@@ -149,12 +150,15 @@
 
                             <div class="container">
                                 <div class="image">
-                                  <img src="images/historyViz.png" style="width:300px;margin-top:30px">
+                                  <img src="images/historyViz.png">
                                 </div>
                                 <div class="text" style="padding-left:10px;">
                                     <h3>Code Stories</h3>
-                                    Existing approaches to capturing code histories fall short of what we want from them. Source code commits lump too many changes together,
-                                    making it difficult to understand the reasoning for them. Key stroke level histories are too much. We are working to create Code Stories that 
+                                    Understanding and using an existing codebase can be difficult. Programmers often struggle to answer basic questions: what code influences
+                                    which aspects of the system? Why is it structured the way it is? Some of this information was observable during program creation but is not
+                                    stored. Source code commits lump too many changes together, often representing the end state of a problem solving process but removing traces of the process, thereby
+                                    making it difficult to understand the reasoning for them. Yet, there can also be too much information. Key stroke level histories are detailed but difficult to navigate
+                                    and extract information from. We are working to create Code Stories that 
                                     capture the history of how software programs evolved that organize changes based on a problem-solution structure and incorporate code history, 
                                     output history and web foraging history to capture the influences that shape the code. 
                                 </div>
@@ -162,14 +166,14 @@
 
                             <div class="container">
                                 <div class="image">
-                                  <img src="images/taInterface.png" style="width:300px;margin-top:30px">
+                                  <img src="images/taInterface.png">
                                 </div>
                                 <div>
                                     <div class="text" style="padding-left:10px;">
                                         <h3>Tools to Support TAs</h3>
                                         Universities increasingly rely on undergraduate TAs to provide accessible help for students in computer science courses. But, we know relatively
                                         little about how TAs and learners interact, how those practices compare to the best practices for tutoring, and where TAs could use some extra 
-                                        support. We are studying what occurs during help sessions, identifying barriers, and designing tools to address those. The first such tool focuses 
+                                        support. We are studying what occurs during help sessions, identifying barriers, and designing tools to address those barriers. The first such tool focuses 
                                         on supporting TAs in debugging student code and understanding the bugs that exist in student code. 
                                     </div>
 
@@ -191,7 +195,7 @@
                             
                             <div class="container">
                                 <div class="image">
-                                  <img src="images/storytellingAlice.png" style="width:300px;margin-top:20px">
+                                  <img src="images/storytellingAlice.png" >
                                 </div>
                                 <div>
                                     <div class="text" style="padding-left:10px;">
@@ -268,13 +272,17 @@
 
                             <div class="container">
                                 <div class="image">
-                                  <img src="images/strokeGames.png" style="width:300px;margin-top:20px">
+                                  <img src="images/strokeGames.png" >
                                 </div>
                                 <div>
                                     <div class="text" style="padding-left:10px;">
                                         <h3>Games for Stroke Rehabilitation</h3>
-                                        We did some of the earliest work on the use of games for stroke rehabilitation, helping to explore how to design games with a physical 
-                                        rehabilitation goal, how those games impacted individuals with stroke, as well as strategies for calibration and positive feedback.
+                                        Roughly one in four of us can expect to experience a stroke at some point in our lives, often leading to long term disability. One of the challenges
+                                        associated with recovering from a stroke is that each individual experiences a different injury, thus leading to a distinct set of deficits. Individualized
+                                        rehabilitation is particularly critical. We did some of the early work on the design of personalizable games for stroke rehabilitation, helping to explore 
+                                        how to design games with a physical 
+                                        rehabilitation goal and how those games impacted individuals with stroke. Along the way, we developed novel strategies for calibrating games to account 
+                                        for changing daily needs as well as strategies for in-game reward systems.
                                     </div>
                                     <div class="text" style="padding-left:10px;font-size: x-small;padding-top: 10px;">
                                         Selected Publications:
@@ -342,13 +350,16 @@
 
                             <div class="container">
                                 <div class="image">
-                                  <img src="https://i.pinimg.com/originals/26/ea/fc/26eafc0b14488fea03fa8fa9751203ff.jpg" style="width:200px;height:150px;margin-top:20px">
+                                  <img src="images/playExplore.png" >
                                 </div>
                                 <div>
                                     <div class="text" style="padding-left:10px;">
                                         <h3>Supporting Novice Code Reuse</h3>
                                         Formal opportunities to explore computer science are still relatively rare for young students. Consequently, it is important that 
-                                        programming environments for kids enable them to learn from each others' code.
+                                        programming environments for kids enable them to learn from each others' code. We have explored a variety of interfaces
+                                        that record execution histories and allow users to interactively explore them to identify the behavior 
+                                        associated with each individual action or groups of actions. These tools also allow users to select action of interests
+                                        to reuse in another program and guide the process of integrating selected code into that target program.
                                     </div>
                                     <div class="text" style="padding-left:10px;font-size: x-small;padding-top: 10px;">
                                         Selected Publications:
@@ -394,7 +405,7 @@
 
                             <div class="container">
                                 <div class="image">
-                                  <img src="images/stencils.png" style="width:300px;margin-top:20px">
+                                  <img src="images/stencils.png" >
                                 </div>
                                 <div>
                                     <div class="text" style="padding-left:30px;">
@@ -448,7 +459,7 @@
 
                             <div class="container">
                                 <div class="image">
-                                  <img src="https://i.pinimg.com/originals/26/ea/fc/26eafc0b14488fea03fa8fa9751203ff.jpg" style="width:200px;height:150px;margin-top:20px">
+                                  <img src="images/codePuzzle.jpeg" >
                                 </div>
                                 <div>
                                     <div class="text" style="padding-left:10px;">
@@ -521,7 +532,7 @@
 
                             <div class="container">
                                 <div class="image">
-                                  <img src="images/suggestions.jpeg" style="width:300px;margin-top:20px">
+                                  <img src="images/suggestions.jpeg">
                                 </div>
                                 <div>
                                     <div class="text" style="padding-left:10px;">
